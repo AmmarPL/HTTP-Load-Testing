@@ -2,9 +2,7 @@
 
 This Python-based tool is designed for HTTP load testing and benchmarking. It can simulate a specified rate of HTTP requests to a target URL and provides detailed statistics on performance and response times. The tool supports both GET and POST requests, configurable through command-line arguments. 
 
-Example use cases for POST request with GPT 3.5 inference and GET request with a dummy load website is shown! For testing, you can just copy the command from the GET use case (Example Use Case 2) and change the URL 😊 I've done my best to write modular and understandable code, but please reach out if you have any questions!
-
-Note: This is my first time doing a project of this kind, related to server testing 😊
+Example use cases for POST request with GPT 3.5 inference and GET request with a dummy load website is shown!
 
 ## Features
 
