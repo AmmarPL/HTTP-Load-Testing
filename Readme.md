@@ -6,18 +6,14 @@ Example use cases for POST request with GPT 3.5 inference and GET request with a
 
 ## Features
 
-### Bare Minimum Requirements
+1) **HTTP Address Input**: Accepts an HTTP address to target the server.
+2) **Configurable Queries Per Second (QPS)**: Supports a `--qps` flag to generate requests at a specified fixed QPS.
+3) **Latency and Error Reporting**: Reports comprehensive latencies and error rates.
+4) **Docker Image**: Provides a buildable Docker image for convenient deployment and scalability.
 
-- **HTTP Address Input**: Accepts an HTTP address to target the server.
-- **Configurable Queries Per Second (QPS)**: Supports a `--qps` flag to generate requests at a specified fixed QPS.
-- **Latency and Error Reporting**: Reports comprehensive latencies and error rates.
-- **Docker Image**: Provides a buildable Docker image for convenient deployment and scalability.
+5) **Concurrent Users**: Allows the simulation of multiple users hitting the server simultaneously. This feature is crucial for testing how well the server handles simultaneous load, mimicking real-world usage by multiple users.
 
-### Additional Features Added
-
-1) **Concurrent Users**: Allows the simulation of multiple users hitting the server simultaneously. This feature is crucial for testing how well the server handles simultaneous load, mimicking real-world usage by multiple users.
-
-2) **Request Send Patterns**: Choose from several predefined request sending patterns to simulate different real-world traffic scenarios:
+6) **Request Send Patterns**: Choose from several predefined request sending patterns to simulate different real-world traffic scenarios:
     
    - **Constant Rate**: Maintains a steady flow of requests per second throughout the test duration. Ideal for testing baseline performance under a continuous load.
    
@@ -33,15 +29,15 @@ Example use cases for POST request with GPT 3.5 inference and GET request with a
 
    After the load test, patterns of request sending are visualized to analyze the impact of these traffic patterns on server behavior as shown above. The images above are plots generated after load testing with those patterns chosen.
 
-4) **Support for GET and POST Requests**: Enables the tool to send both GET and POST requests, allowing for a wider range of testing scenarios. This feature is important for applications that rely on data retrieval as well as data submission functionalities.
+7) **Support for GET and POST Requests**: Enables the tool to send both GET and POST requests, allowing for a wider range of testing scenarios. This feature is important for applications that rely on data retrieval as well as data submission functionalities.
 
-5) **Detailed Statistics and Plots**: Provides extensive reporting features including:
+8) **Detailed Statistics and Plots**: Provides extensive reporting features including:
    - **Error Tracking**: Tracks and reports errors during the test, identifying potential failure points or bugs in the application.
    - **Latency Statistics**: Captures detailed latency statistics such as minimum, maximum, mean, median, and various percentiles to give a comprehensive view of the server's response times.
    - **Status Code Distribution**: Reports on the distribution of HTTP response status codes, which helps in understanding the different types of responses sent by the server under load.
    - **Visual Latency Plots**: Generates visual plots of latency over time, saved as image files. These plots are invaluable for visual analysis of the server’s performance trends during the test.
 
-6) **Additional Parameters for Quality of Life**:
+9) **Additional Parameters for Quality of Life**:
    - **Duration**: Set the duration of the test to measure sustained load performance.
    - **Timeout**: Set a timeout for each request to simulate network and server delays.
 
