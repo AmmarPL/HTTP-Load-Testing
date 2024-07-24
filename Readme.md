@@ -20,22 +20,28 @@ Example use cases for POST request with GPT 3.5 inference and GET request with a
 2) **Request Send Patterns**: Choose from several predefined request sending patterns to simulate different real-world traffic scenarios:
     
    - **Constant Rate**: Maintains a steady flow of requests per second throughout the test duration. Ideal for testing baseline performance under a continuous load.
+   
    <img src="./Pattern_Plots/Dummy_Get_Constant.png" alt="GPT_3.5" width="25%" />
+
    - **Spiky Rates**: Introduces sudden bursts of high traffic at intervals. This pattern is useful for testing how the server handles unexpected spikes in user activity.
+   
    <img src="./Pattern_Plots/Dummy_Get_Spike.png" alt="GPT_3.5" width="25%" />
+
    - **Ramping Up Rate**: Gradually increases the rate of requests over time. This helps in assessing server performance as load intensifies.
+   
    <img src="./Pattern_Plots/Dummy_Get_Ramp.png" alt="GPT_3.5" width="25%" />
+
    After the load test, patterns of request sending are visualized to analyze the impact of these traffic patterns on server behavior as shown above. The images above are plots generated after load testing with those patterns chosen.
 
-3) **Support for GET and POST Requests**: Enables the tool to send both GET and POST requests, allowing for a wider range of testing scenarios. This feature is important for applications that rely on data retrieval as well as data submission functionalities.
+4) **Support for GET and POST Requests**: Enables the tool to send both GET and POST requests, allowing for a wider range of testing scenarios. This feature is important for applications that rely on data retrieval as well as data submission functionalities.
 
-4) **Detailed Statistics and Plots**: Provides extensive reporting features including:
+5) **Detailed Statistics and Plots**: Provides extensive reporting features including:
    - **Error Tracking**: Tracks and reports errors during the test, identifying potential failure points or bugs in the application.
    - **Latency Statistics**: Captures detailed latency statistics such as minimum, maximum, mean, median, and various percentiles to give a comprehensive view of the server's response times.
    - **Status Code Distribution**: Reports on the distribution of HTTP response status codes, which helps in understanding the different types of responses sent by the server under load.
    - **Visual Latency Plots**: Generates visual plots of latency over time, saved as image files. These plots are invaluable for visual analysis of the server’s performance trends during the test.
 
-5) **Additional Parameters for Quality of Life**:
+6) **Additional Parameters for Quality of Life**:
    - **Duration**: Set the duration of the test to measure sustained load performance.
    - **Timeout**: Set a timeout for each request to simulate network and server delays.
 
